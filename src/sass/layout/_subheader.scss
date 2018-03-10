@@ -1,0 +1,52 @@
+.subheader {
+  margin-top: 2px;
+  font-size: 1.5rem;
+
+  display: grid;
+  grid-template-rows: 5rem 1fr;
+
+  &__nav {
+    display: flex;
+    z-index: 5;
+    width: 100%;
+    background-color: $color-white;
+    align-items: center;
+    position: fixed;
+    border-bottom: 3px solid $color-UW-gold;
+  }
+
+  & .nav-item {
+    border-radius: 10px 10px 0 0;
+    border: 3px solid $color-UW-purple;
+    border-bottom: transparent;
+
+    margin: 1rem 0 0 .5rem;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+
+    &.active {
+      background-color: $color-UW-gold;
+    }
+
+  }
+
+  & .nav-link {
+
+    &,
+    &:link,
+    &:visited {
+      color: $color-UW-purple;
+      width: 100%;
+
+      &:hover {
+        width: 100%;
+        color: $color-UW-purple;
+        background-color: $color-UW-gold;
+        border-radius: 8px 8px 0 0;
+      }
+    }
+
+  }
+}

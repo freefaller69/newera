@@ -1,0 +1,39 @@
+.sidebar {
+  background-color: $color-UW-purple;
+  height: 100%;
+  position: fixed;
+  width: 36rem;
+
+  & h3 {
+    color: $color-UW-gold;
+  }
+
+  &__nav {
+
+    .nav-item {
+      height: 6rem;
+      border: 2px solid $color-UW-purple;
+      border-left: .5rem solid $color-UW-purple;
+      border-right: .5rem solid $color-UW-purple;
+      transition: all .3s;
+      background-color: $color-white;
+      color: $color-UW-purple;
+      font-weight: 400;
+
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: $color-UW-gold;
+        color: $color_white;
+      }
+
+      &.active {
+        background-color: $color-UW-gold;
+        color: $color_white;
+      }
+    }
+
+  }
+
+}

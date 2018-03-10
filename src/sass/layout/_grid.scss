@@ -1,0 +1,41 @@
+app-header {
+  grid-area: header;
+}
+
+.program {
+  grid-area: sidebar;
+
+  display: grid;
+  grid-template-columns: 36rem 1fr;
+  justify-content: center;
+}
+
+.article {
+  grid-area: article;
+}
+
+app-root {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 7rem 1fr;
+
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.images {
+  grid-area: images;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: auto 65rem;
+  grid-template-areas: "images intro";
+  justify-content: center;
+}
+
+.content {
+  grid-column-start: 2;
+}
